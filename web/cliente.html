@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+
+    <link rel="stylesheet" href="Modelocss/cliente.css">
+</head>
+
+<body>
+
+<jsp:include page="menu.jsp"/>
+
+<form action="ControleCliente" method="post">
+
+    <div>
+        <h2>Cadastro de Cliente</h2>
+    </div>
+
+    <div>
+        <label>CPF:</label>
+        <input type="text" name="txtcpf" placeholder="Digite o CPF" maxlength="14" required>
+    </div>
+
+    <div>
+        <label>Nome:</label>
+        <input type="text" name="txtnome" placeholder="Digite o nome" required>
+    </div>
+
+    <div>
+        <label>Telefone:</label>
+        <input type="text" name="txttelefone" placeholder="Digite o telefone" required>
+    </div>
+
+    <input type="hidden" name="op" value="CADASTRAR">
+
+    <input type="submit" value="Cadastrar Cliente">
+
+    <a href="ControleCliente?op=LISTAR" class="botao-listar">
+        LISTAR CLIENTES
+    </a>
+
+    <a href="veiculo.jsp" class="botao-listar">
+        IR PARA VEÍCULOS
+    </a>
+
+    <a href="atendimento.jsp" class="botao-listar">
+        IR PARA ATENDIMENTO
+    </a>
+
+</form>
+
+</body>
+</html>

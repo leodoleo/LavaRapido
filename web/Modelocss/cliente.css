@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+form {
+    background-color: #1e1e1e;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #ffd700aa;
+    width: 100%;
+    max-width: 500px;
+}
+form > div:first-child h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ffd700;
+    font-size: 0.95rem;
+}
+
+input[type="text"] {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #3a3a3a;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #ffd700;
+    color: #121212;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.15s;
+}
+
+input[type="submit"]:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+input[type="date"] {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="date"]:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #3a3a3a;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="white" d="M6 8L0 0h12z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px 8px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #3a3a3a;
+}
+a.botao-listar {
+    margin-top: 15px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffd700;
+    color: #121212;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.15s;
+}
+
+a.botao-listar:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+br {
+    margin-bottom: 15px;
+}

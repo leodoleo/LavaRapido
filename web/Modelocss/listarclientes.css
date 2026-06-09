@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    padding: 30px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #ffd700aa;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+}
+
+/* FORM BUSCA */
+.form-busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-busca input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    min-width: 200px;
+}
+
+.form-busca input:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+.form-busca button {
+    padding: 10px 15px;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-busca a {
+    color: #ffd700;
+    text-decoration: none;
+    align-self: center;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #ffd700;
+    color: #121212;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* BOTÕES */
+button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* EDITAR */
+.btn-editar {
+    background-color: #00c853;
+    color: white;
+}
+
+.btn-editar:hover {
+    background-color: #00a844;
+}
+
+/* DELETAR */
+.btn-deletar {
+    background-color: #d50000;
+    color: white;
+}
+
+.btn-deletar:hover {
+    background-color: #b00000;
+}
+
+/* VOLTAR */
+.btn-voltar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd700;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-voltar:hover {
+    background-color: #d4ac0d;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    .form-busca {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-busca input {
+        width: 100%;
+    }
+}

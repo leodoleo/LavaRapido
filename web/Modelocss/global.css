@@ -1,0 +1,223 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #ffd70055;
+}
+
+/* TÍTULOS */
+h1, h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* ================= FORM ================= */
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 3px #ffd70055;
+}
+
+/* CAMPOS */
+form div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ffd700;
+    font-size: 0.95rem;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* FOCUS */
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #ffd700;
+    background-color: #3a3a3a;
+}
+
+/* PLACEHOLDER */
+input::placeholder {
+    color: #999;
+}
+
+/* CALENDÁRIO */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* SELECT SETA */
+select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8"><path fill="white" d="M6 8L0 0h12z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* BOTÃO SUBMIT */
+input[type="submit"],
+button {
+    width: 100%;
+    background-color: #ffd700;
+    color: #121212;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.03);
+}
+
+/* LINKS BOTÃO */
+a.botao,
+a.botao-listar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #ffd700;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a.botao:hover,
+a.botao-listar:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.03);
+}
+
+/* ================= TABELA ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #ffd700;
+    color: #121212;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* BOTÕES TABELA */
+.btn-editar {
+    background-color: #00c853;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.btn-deletar {
+    background-color: #d50000;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+/* FORM BUSCA */
+.form-busca {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* ALERTAS */
+.alert {
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #00c853;
+}
+
+.alert-error {
+    background-color: #d50000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    form {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .form-busca {
+        flex-direction: column;
+    }
+}
